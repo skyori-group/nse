@@ -34,7 +34,7 @@ section:not(.main) {
   padding: 2.5rem 0;
 }
 
-section:nth-child(odd) {
+section:nth-child(odd):not(:first-child) {
   background-color: #f2fbff;
 }
 
@@ -153,9 +153,12 @@ h2 i {
   background-repeat: no-repeat;
   color: white;
   position: relative;
-  margin-top: 74px;
 }
 
+main,
+.main {
+  margin-top: 74px;
+}
 
 
 .main .row {
@@ -301,4 +304,12 @@ footer .footerPart > .footerTitle {
 
 footer > *+*:not(:first-child) {
   margin-left: 120px;
+}
+
+.partners-items a img {
+  /* width: 90%; */
+  transition: all 0.2s;
+}
+.partners-items a:hover img {
+  transform: scale(1.1);
 }
