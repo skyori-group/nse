@@ -86,7 +86,7 @@ var aobjs = [
 ];
 
 $("a").on('click', function(event) {
-  if (this.hash !== "") {
+  if (this.hash !== "" && location.pathname == "/") {
     event.preventDefault();
     var hash = this.hash;
     var scrollTop = $(hash).offset().top - 74;
