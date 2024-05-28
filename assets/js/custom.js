@@ -86,14 +86,19 @@ var aobjs = [
 ];
 
 $("a").on('click', function(event) {
-  if (this.hash !== "" && location.pathname == "/") {
+  if (this.hash !== "" ) {
     event.preventDefault();
     var hash = this.hash;
     var scrollTop = $(hash).offset().top - 74;
-    $('html, body').animate({
-      scrollTop: scrollTop
-    }, 800);
-  }
+    if (location.pathname == "/") {
+      $('html, body').animate({
+        scrollTop: scrollTop
+      }, 800);
+    } else {
+      $('html, body').scrollTop(scrollTop);
+    }
+
+  } 
 });
 
 $(document).ready(function(){
