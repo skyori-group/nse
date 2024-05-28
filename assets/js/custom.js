@@ -86,7 +86,7 @@ var aobjs = [
 ];
 
 $("a").on('click', function(event) {
-  if (this.hash !== "" ) {
+  if (this.hash !== "" && location.pathname == "/") {
     event.preventDefault();
     var hash = this.hash;
     var scrollTop = $(hash).offset().top - 74;
@@ -94,14 +94,11 @@ $("a").on('click', function(event) {
       $('html, body').animate({
         scrollTop: scrollTop
       }, 800);
-    } else {
-      $('html, body').scrollTop(scrollTop);
     }
-
   } 
 });
 
-$(document).ready(function(){
+$(document).ready(function() {
   $(".navbar-toggler").click(function() {
     var navbar = $(".navbar-collapse");
     if (navbar.hasClass("opened")) {
@@ -220,4 +217,17 @@ $(document).ready(function(){
   })
   $('.review.visible').fancybox();
   $('.answer.visible').fancybox();
-})
+});
+
+window.addEventListener('load', function() {
+  const hash = window.location.hash;
+  if (hash) {
+    setTimeout(() => {
+      const targetElement = document.querySelector(hash);
+      if (targetElement) {
+        const offset = 74; // Размер отступа
+        window.scrollTo({top: targetElement.offsetTop - offset});
+      }
+    }, 0);
+  }
+});
