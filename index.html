@@ -36,7 +36,7 @@
     <header id="header">
   <nav class="navbar navbar-expand-md fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Нормосфера</a>
+      <a class="navbar-brand" href="/#">Нормосфера</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -45,6 +45,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="/#sys">О системе</a></li>
+          <li class="nav-item"><a class="nav-link" href="/#implementations">Внедрения</a></li>
           <li class="nav-item"><a class="nav-link" href="/#effects">Эффекты внедрения</a></li>
           <li class="nav-item"><a class="nav-link" href="/#reviews">Отзывы</a></li>
           <li class="nav-item"><a class="nav-link" href="/#principies">Характеристки</a></li>
@@ -79,9 +80,8 @@
 </section>
 <section id="sys">
   <div class="text-center">
-    <h2>О системе</h2>
-    <span>Программный комплекс "Нормосфера" имеет модульную структуру,<br />
-        что позволяет использовать поэтапный подход к внедрению и развитию системы.
+    <span> Программный комплекс "Нормосфера" имеет модульную структуру, <br />
+      что позволяет внедрять систему поэтапно и в дальнейшем развивать.
     </span>
   </div>
 </section>
@@ -114,7 +114,7 @@
     <div class="red-border pl-3">
       <div class="row">
         <div class="col-lg-6 text-center">
-          <img src="assets/IMG/iphone.png" height="480px;" style="margin-top:-55px;" class="img-fluid"/>
+          <img src="assets/IMG/iphone.png" height="480px;" style="margin-top:-55px;"/>
         </div>
         <div class="col-lg-6 pl-3">
           <h2>электронная повестка<br />заседания</h2>
@@ -200,6 +200,65 @@
     </div> 
   </div>
 </section>
+<section>
+  <div class="container">
+    <h2 class="text-center">Система электронного дистанционного голосования</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <ul class="inline bluePoint">
+          <li>Позволяет проводить полноценные заседания в период карантина и сложной эпидемиологической обстановки</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <ul class="inline bluePoint">
+          <li>Позволяет оперативно голосовать по вопросам федеральной повестки в промежутке между плановыми заседаниями</li>
+        </ul>
+      </div>
+      <div class="col-lg-12 text-center"><a target="_blank" href="https://sdeg.normosphera.ru/">Узнать подробнее</a></div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2 class="text-center">Конструктор документов</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <ul class="inline bluePoint">
+          <li>Генерация актуальной версии документа (закона, указа, распоряжения или прочих нормативных актов) на основе базового документа и документов о внесении изменений</li>
+          <li>Хранение всех документов в единой локальной базе</li>
+      </ul>
+      </div>
+      <div class="col-lg-6">
+        <ul class="inline bluePoint">
+          <li>Интеграция базы документов с различными системами электронного документооборота</li>
+          <li>Настройка доступа пользователей к тем или иным документам</li>
+        </ul>
+      </div>
+      <div class="col-lg-12 text-center"><a target="_blank" href="/document-constructor.html">Узнать подробнее</a></div>
+    </div>
+  </div>
+</section>
+<section id="implementations">
+  <div class="container">
+    <h2 class="text-center">Инструменты ПК “Нормосфера” успешно используются в органах законодательной власти следующих регионов:</h2>
+    <div class="row row justify-content-center">
+      <div class="col-lg-5">
+        <ul class="list-unstyled">
+          <li><img class="mr-2" src="/assets/IMG/regions/prm.png">Пермский край</li>
+          <li><img class="mr-2" src="/assets/IMG/regions/kir.png">Кировская область</li>
+          <li><img class="mr-2" src="/assets/IMG/regions/xmao.png">Ханты-Мансийский автономный округ</li>
+        </ul>
+      </div>
+      <div class="col-lg-5">
+        <ul class="list-unstyled">
+          <li><img class="mr-2" src="/assets/IMG/regions/murm.png">Мурманская область</li>
+          <li><img class="mr-2" src="/assets/IMG/regions/spb.png">Санкт-Петербург</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="effects">
   <div class="container">
       <h2 class="text-center">эффекты внедрения</h2>
@@ -282,13 +341,12 @@
           <span>ALT Linux 8 / Microsoft Windows Server 2008 R2 и выше</span>
           <h4>СУБД</h4>
           <span>PostgreSQL 9.5 и выше / MS SQL Server 2008 R2 и выше</span>
+        </div>
+        <div class="col-lg-6">
           <h4>Фреймворк</h4>
           <span>mono / .NET Framework 4 и выше</span>
           <h4>Веб-сервер</h4>
           <span>apache / IIS 7.5 и выше</span>
-        </div>
-        <div class="col-lg-6">
-          <img src="assets/IMG/comp.png" class="img-fluid"/>
         </div>
       </div>
     </div>
@@ -302,25 +360,6 @@
     </div>
   </div>
 </section>
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6">
-        <h2>Возможно, вас также заинтересует</h2>
-      </div>
-      <div class="col-lg-6">
-        <b>Система дистанционного электронного голосования:</b>
-        <ul class="bluePoint">
-            <li>позволяет проводить полноценные заседания в период карантина и сложной эпидемиологической обстановки</li>
-            <li>позволяет оперативно голосовать по вопросам федеральной повестки в промежутке между плановыми заседаниями</li>
-        </ul>
-        <a target="_blank" href="https://sdeg.normosphera.ru/">Узнать подробнее</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
 
     </main>
     <!-- Footer -->
